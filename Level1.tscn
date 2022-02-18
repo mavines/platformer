@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://world_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Steve.tscn" type="PackedScene" id=2]
+
+[node name="Level1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 65538, -1610612732, 0, 131074, -1610612734, 0, 196610, -1610612734, 0, 262146, -1610612734, 0, 327682, -1610612734, 0, 327690, 4, 0, 327691, 2, 0, 327692, 2, 0, 327693, 2, 0, 327694, 2, 0, 327695, 2, 0, 327696, 2, 0, 327697, 2, 0, 327698, 5, 0, 393218, -1610612734, 0, 458754, -1610612731, 0, 524290, 1, 0, 524291, 2, 0, 524292, 2, 0, 524293, 2, 0, 524294, 2, 0, 524295, 2, 0, 524296, 2, 0, 524297, 2, 0, 524298, 2, 0, 524299, 2, 0, 524300, 3, 0, 786445, -1610612732, 0 )
+
+[node name="Steve" parent="." instance=ExtResource( 2 )]
+position = Vector2( 488, 150 )
