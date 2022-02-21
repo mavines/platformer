@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var velocity = Vector2(0,0)
-const SPEED = 180
+const SPEED = 250
 const GRAVITY = 35
 const JUMPFORCE = -1100
 
@@ -27,3 +27,11 @@ func _physics_process(delta):
 	
 	if not is_on_floor():
 		$Sprite.play("air")
+		
+
+func _on_Fall_Zone_body_entered(body):
+	get_tree().change_scene("res://Level1.tscn")
+
+
+func _on_coin_collected():
+	pass # Replace with function body.
